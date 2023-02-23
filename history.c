@@ -66,8 +66,8 @@ int read_history(info_t *info)
 	free(filename);
 	if (fd == -1)
 		return (0);
-	if (!fstat(fd, &st))
-		fsize = st.st_size;
+	if (!fstat(fd, &s))
+		fsize = s.st_size;
 	if (fsize < 2)
 		return (0);
 	buf = malloc(sizeof(char) * (fsize + 1));

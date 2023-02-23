@@ -1,3 +1,5 @@
+#include "mainshell.h"
+
 /**
  *interactive - returns true if shell is interactive mode
  *@info: struct address
